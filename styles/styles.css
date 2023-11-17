@@ -1,0 +1,415 @@
+.brand-logo {
+    height: 63px;
+}
+
+.nav-wrapper {
+    background-color: #353839;
+}
+
+.page {
+    padding-right: 50px;
+    font-family: courier;
+    font-size: 25px;
+}
+
+
+.background {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(
+      to right,
+      rgb( 0 0 0 / 0.4),
+      rgb( 0 0 0 / 0)
+    ),
+    url(https://wallpaperaccess.com/full/1567665.png)
+
+    
+
+}
+
+.arrow:before {
+  position: absolute;
+  left: 50%
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  transform: rotate(45deg);
+}
+
+  
+.arrow:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+  
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+
+.header {
+  margin-left: 5%;
+    width: 80%;
+    color: white;
+    
+}
+
+.header-intro {
+    font: 3.5em 'Courier';
+    margin-bottom: 20px;
+}
+
+.index-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.45em;
+  text-align: center;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: -200px;
+  padding: 10px;
+}
+
+
+.secondary-index {
+    background-color: white;
+    height: 200vh;
+    font-family: 'Courier', monospace;
+    margin-top: 10%;
+    width: 100%
+}
+
+.secondary-index-left {
+  display: inline-flex;
+  width: 48%;
+}
+
+.secondary-index-right {
+  display: inline-flex;
+  width: 48%;
+  
+}
+
+.secondary-index-header {
+
+}
+
+
+
+.spacer-1 {
+  height: 20px;
+  background-color: white;
+}
+
+.spacer-2 {
+  height: 5vh;
+}
+
+#card-header {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 10%;
+  width: 40%;
+}
+.card-title {
+  margin-left: 10%;
+  margin-bottom: -8%;
+  margin-top: 4%;
+
+}
+
+.card-image {
+  padding: 2%;
+  align-self: center;
+  width: 220px
+
+}
+
+#card-1, #card-2, #card-3 {
+  font-size: small;
+}
+
+.animate-secondary-index-header {
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    teal 0%,
+    #353839 29%,
+    #0D98BA 67%,
+    black 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-family: 'Courier', monospace;
+  display: inline-block;
+      font-size: 3.5em;
+  margin-left: 5%
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.secondary-index-bottom {
+  position: absolute;
+  width: 100%;
+  background-color: white
+}
+
+.skills-list{
+  margin: 5%;
+}
+
+.skills-description {
+  margin: 10%;
+  margin-left: 5%;
+  text-align: center;
+
+}
+
+#interests-design {
+  display: inline-flex;
+  margin-top: 1%;
+}
+
+.interests-list{
+  margin-left: 6%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  display: inline-flex;
+}
+.interests-description {
+  width:79%;
+  margin-left: 3%;
+  margin-top: 3%;
+  text-align: center;
+  display: inline-flex;
+  position: absolute;
+  font-size: 13.5px;
+ 
+}
+
+.about-background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1
+}
+
+.about-page {
+  width: 90%;
+  height: 95vh;
+  position: absolute;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 2px;
+}
+
+.about-title {
+  margin-left: 10%;
+}
+
+.about-header {
+  font-family: 'Courier New', Courier;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main-about {
+  margin: 50px;
+  margin-bottom: 0px;
+  background-color: white;
+  font:  15px 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.speech-bubble {
+	background: #00aabb;
+	border-radius: .4em;
+  width: 50%;
+  margin-left: 25%;
+  padding: 20px;
+  text-align: center;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 18px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -9px;
+	margin-bottom: -18px;
+}
+
+.about-paragraph {
+  padding: 80px;
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+
+svg {
+    display: block;
+    font: 8em 'Montserrat';
+    width: 700px;
+    height: 300px;
+    margin: 10 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: teal;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 7.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #0D98BA;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: teal;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: white;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: teal;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: white;
+  animation-delay: -5s;
+}
+
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+
+}
+
+.linktext { 
+    color: #0D98BA;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+}
+
+.linktext:hover {
+  box-shadow: inset 200px 0 0 0 white;
+
+}
+
+
+.previews {
+    height: 160px;
+    width: 300px;
+    border: 2px solid teal;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+}
+    
+ @media all and (max-width: 600px) {
+    .brand-logo {
+        width: 100%;
+    }
+ 
+    .right {
+        position: relative;
+        top: 50px;
+        margin: 0px;
+    }
+    
+    #page-list {
+        font-size: 20px;
+        padding: 5px;
+       
+        }
+    }
+
+@media (min-width: 601px) and (max-width: 870px) {
+    #brand-logo {
+        position: relative;
+        left: 190px;
+    }
+    #page-list {
+        position: relative;
+        top: -10px;
+    
+    }
+ 
+}
+
+@media (min-width: 871px) and (max-width: 993px) {
+    #brand-logo {
+        position: relative;
+        left: 190px;
+    }
+
+}
+
+ 
+
+ 
