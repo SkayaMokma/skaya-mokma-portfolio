@@ -37,7 +37,7 @@ body {
 
 .sidebar-footer {
   font-size: 15px;
-  padding-top: 17%;
+  padding-top: 12%;
 }
 
 #temp-converter:hover {
@@ -47,16 +47,20 @@ body {
 }
 .trademark {
   font-size: 11px;
-  padding-top: 4%
+}
+.return-link:link {
+    color: white
+
 }
 
 .weatherbit-link {
   color: white;
 }
-.weatherbit-link:hover, :visited{
+.weatherbit-link:hover, :visited, .return-link:hover, :visited{
   text-decoration: underline;
   color: white
 }
+
 .search {
   width: 100%;
   position: absolute;
