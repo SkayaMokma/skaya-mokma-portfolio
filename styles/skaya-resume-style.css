@@ -26,36 +26,36 @@
     --main-blocks-title-icon-offset-left: -19pt;
   }
   
-  body{
-
+  body {
     margin: 0;
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 300;
+    font-family: "Source Code Pro"; 
+    /* font-weight: 300; */
     line-height: 1.6;
     color: #444;
     hyphens: auto;
   }
 
   .resume-photo {
-    height: 230px;
-    width: 190px;
+    height: 190px;
+    width: 160px;
     display: inline-block;
     border-radius: 30%;
     border: solid #b3e5fc 9px;
   }
 
-
   .name {
     display: inline-block;
-    padding-left: 5px;
-    text-align: center;
+    width: 60%;
+    position: absolute;
+    padding-left: 20px;
+    
   }
 
-  .softdev {
-    font-weight: 400;
-    font-size: 11pt;
-    color: #555;
-    padding-left: 80px;
+  #objective {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 13px;
+      
   }
   
   h1, h2, h3{
@@ -71,7 +71,7 @@
     float: left;
     width: var(--main-width);
     padding: 0.25in 0.25in 0 0.25in;
-    font-size: 7pt;
+    font-size: 9pt;
   }
   
   #sidebar{
@@ -82,13 +82,13 @@
     width: var(--sidebar-width);
     padding: 0.6in var(--sidebar-horizontal-padding);
     background-color: #b3e5fc;
-    font-size: 8.5pt;
+    font-size: 11pt;
   }
   
   /* main */
   
   /** big title **/
-  #title, h1, h2{
+  h1, h2{
     text-transform: uppercase;
   }
   
@@ -257,7 +257,8 @@
     flex: 1 0 0;
     padding-right: 235px;
     padding-left: var(--decorator-horizontal-margin);
-    padding-top: calc(var(--row-blocks-padding-top) - 0.5pt) !important; /* not sure why but this is needed for better alignment */
+    padding-top: calc(var(--row-blocks-padding-top) - 0.5pt) !important;
+     /* not sure why but this is needed for better alignment */
   }
   
   .details header{
@@ -265,7 +266,7 @@
   }
   
   .details h3{
-    font-size: 12pt;
+    font-size: 16px;
   }
   
   .main-block:not(.concise) .details div{
@@ -317,7 +318,7 @@
   
   #main li{
     margin: 0 0 0.025in 0;
-    font-size: 10pt;
+    font-size: 14px;
   }
   
   /* ***** customize list symbol style *****
